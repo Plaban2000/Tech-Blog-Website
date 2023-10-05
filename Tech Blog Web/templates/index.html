@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+  <header>
+    <div class="company-logo">T
+    </div>
+    <nav class="navbar">
+      <ul class="nav-items">
+        <li class="nav-item"><a href="/Home" class="nav-link">HOME</a></li>
+        <li class="nav-item"><a href="/Community"class="nav-link">BLOG</a></li>
+        <li class="nav-item"><a href="/About"class="nav-link">ABOUT</a></li>
+        <li class="nav-item"><a href="/login"class="nav-link">LOG IN</a></li>
+      </ul>
+    </nav>
+    <div class="menu-toggle">
+      <i class="bx bx-menu"></i>
+      <i class="bx bx-x"></i>
+    </div>
+  </header>
+<div class="container">  
+  <form id="contact" action="{{ url_for('index1') }}" method="post">
+  <h3>TECH FUSION HUB</h3>
+    <h4 style="color: white;">Write Your Comment Here</h4>
+    <fieldset>
+      <input placeholder="product Id" name="product_ID" type="text" tabindex="2" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="user ID" name="user_ID" type="text" tabindex="3" required>
+    </fieldset>
+    <fieldset>
+      <textarea placeholder="write your comment" name="comment_In" tabindex="5" required></textarea>
+    </fieldset>
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+    </fieldset>
+  </form>
+  <br>
+  <br>
+  <br>
+  <div class="footer">
+    <div class="contain">
+    <div class="col">
+      <h1>Web</h1>
+      <ul>
+        <li><a href="/About" style="color: rgba(245, 245, 245, 0.489);">About</a></li>
+        <li>Mission</li>
+        <li>Services</li>
+        <li>Social</li>
+        <li><a href="/Community" style="color: white;">Blog</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col">
+      <h1>Products</h1>
+      <ul>
+        <li>Laptop</li>
+        <li>Headphone</li>
+        <li>Speaker</li>
+        <li>Desktop</li>
+        <li>More..</li>
+      </ul>
+    </div>
+    
+    <div class="col">
+      <h1>Company</h1>
+      <ul>
+        <li>Dell</li>
+        <li>Asus</li>
+        <li>Apple</li>
+        <li>IBM</li>
+        <li>More..</li>
+        
+      </ul>
+    </div>
+    <div class="col">
+      <h1>Support</h1>
+      <ul>
+        <li>Contact us</li>
+        <li>Web chat</li>
+        <li>Open ticket</li>
+      </ul>
+    </div>
+    <div class="col social">
+      <h1>Social</h1>
+      <ul>
+        <li><img src="static/images/facebook.png" style="width: 35px;"></li>
+        <li><img src="static/images/twiter.png"  style="width: 43px;"></li>
+        <li><img src="static/images/instagram.png" style="width: 36px;"></li>
+      </ul>
+    </div>
+  <div class="clearfix">
+  </div>
+  </div>
+  <h2 style="color: rgba(255, 255, 255, 0.537); font-size: 0.8rem; text-align: center;padding: 2rem 2rem;">© Copyright 2023 Powered by TECH FUSION HUB</h2>
+  </div> 
+</div>
+<!-- partial -->
+</body>
+</html>
